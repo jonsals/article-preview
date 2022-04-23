@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+:root {
+  --darkGray: hsl(217, 19%, 35%);
+  --darkBlue: hsl(214, 17%, 51%);
+  --grayBlue: hsl(212, 23%, 69%);
+  --lightGray: hsl(210, 46%, 95%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--lightGray);
+  margin: 0;
+  font-size: 13px;
+  line-height: 1;
+}
+
+h1,
+h2 {
+  color: var(--darkGray);
+}
+
+main {
+  width: 95%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: white;
+  width: 900px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(165, 213, 254);
+  position: relative;
+  overflow: hidden;
+}
+.image-wrapper img {
+  width: 500px;
+  position: absolute;
+  left: -30px;
+  bottom: -80px;
+}
+
+.text-wrapper {
+  padding: 1rem 3rem;
+}
+
+.text-wrapper p {
+  line-height: 1.5;
+  color: var(--darkBlue);
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.contact img {
+  height: 55px;
+  border-radius: 50%;
+}
+.contact-text {
+  margin-left: 1rem;
+}
+.contact h2,
+.contact p {
+  margin: 0;
+}
+.contact h2 {
+  margin-bottom: 0.2rem;
+  font-size: small;
+  font-weight: 700;
+}
+
+.share-wrapper {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.share-button {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border-style: none;
+}
+.share-button:hover {
+  background-color: var(--darkGray);
+}
+.share-button img {
+  height: 50%;
+}
+
+.share-box {
+  width: 200px;
+  position: absolute;
+  background-color: var(--darkBlue);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.share-box img {
+  height: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
