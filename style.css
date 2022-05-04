@@ -36,7 +36,7 @@ main {
   display: grid;
   grid-template-columns: 20rem 1fr;
   border-radius: 15px;
-  overflow: hidden;
+  position: relative;
 }
 
 .image-wrapper {
@@ -105,14 +105,41 @@ main {
 
 .share-box {
   width: 200px;
+  border-radius: 10px;
   position: absolute;
   background-color: var(--darkBlue);
   display: flex;
+  justify-content: space-evenly;
   gap: 1rem;
   align-items: center;
+  overflow: visible;
+  right: -25px;
+  bottom: 6rem;
+  padding: 5px 1.4rem;
+}
+.share-box::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  border-top: 10px solid var(--darkBlue);
+}
+.share-box h3 {
+  text-transform: uppercase;
+  color: var(--grayBlue);
 }
 .share-box img {
-  height: 30px;
+  height: 20px;
+}
+
+.hidden {
+  display: none;
 }
 
 .attribution {
